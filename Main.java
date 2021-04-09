@@ -1,5 +1,5 @@
 import biblioteca.*;
-import calculadora.*;
+import calculadora.Resta;
 
 
 public class Main{
@@ -11,11 +11,13 @@ public class Main{
         x = LE.leerInt("ingrese un valor entero");
         y = LE.leerInt("ingrese un valor entero");
         
-        suma sumaXY = new suma();
+        int z = 0;
 
+        Resta restaXY = new Resta();
 
+        z = restaXY.resta(x, y);
 
-        LE.mostrarInformacion(""+sumaXY.resultado(x, y));
+        LE.mostrarInformacion(""+z);
 
     }
 
